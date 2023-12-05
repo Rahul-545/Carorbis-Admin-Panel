@@ -17,3 +17,21 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+WebUI.openBrowser('')
+
+WebUI.navigateToUrl('https://sis1037-admin.uatsparxit.com/admin/auth/login')
+
+WebUI.rightClick(findTestObject('Object Repository/Page_Login  Carorbis/input_Email_email'))
+
+WebUI.setText(findTestObject('Object Repository/Page_Login  Carorbis/input_Email_email'), 'masteradmin@yopmail.com')
+
+WebUI.rightClick(findTestObject('Object Repository/Page_Login  Carorbis/input_Password_password'))
+
+WebUI.setEncryptedText(findTestObject('Object Repository/Page_Login  Carorbis/input_Password_password'), 'RigbBhfdqOBGNlJIWM1ClA==')
+
+WebUI.rightClick(findTestObject('Object Repository/Page_Login  Carorbis/button_Log In'))
+
+WebUI.click(findTestObject('Object Repository/Page_Login  Carorbis/button_Log In'))
+
+WebUI.rightClick(findTestObject('Object Repository/Page_Dashboard  Carorbis/img'))
+
